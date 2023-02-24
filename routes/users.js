@@ -13,11 +13,12 @@ router.post(
       req.body.is_online = false
       req.body.is_admin = false
       req.body.is_company = false
+      
       let user = await User.create(req.body)
       return res.status(201).json({
         success: true,
         user: user,
-        id: user_id
+        id: user._id
       })
     } catch (error) {
       console.log(error)
