@@ -9,7 +9,7 @@ let schema = new mongoose.Schema ({
     is_admin:{type:Boolean},
     is_company:{type:Boolean},
     is_verified:{type:Boolean},
-    verify_code:{type:String, required:true},
+    verify_code:{type:String},
     photo:{type:String}
 
 },{
