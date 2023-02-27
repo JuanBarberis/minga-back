@@ -22,7 +22,6 @@ router.post(
         success: true,
         user: user,
         id: user._id,
-
       })
     } catch (error) {
       console.log(error)
