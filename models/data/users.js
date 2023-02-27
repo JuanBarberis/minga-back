@@ -4,4 +4,4 @@ import 'dotenv/config.js';
 
 let users = []
 
-User.insertMany(User)
+User.insertMany(users)
